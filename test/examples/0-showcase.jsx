@@ -118,6 +118,7 @@ export default class ShowcaseLayout extends React.Component<Props, State> {
           useCSSTransforms={this.state.mounted}
           compactType={this.state.compactType}
           preventCollision={!this.state.compactType}
+          resizeHandles={['w', 's', 'e']}
         >
           {this.generateDOM()}
         </ResponsiveReactGridLayout>
